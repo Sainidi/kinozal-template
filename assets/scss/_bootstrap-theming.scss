@@ -61,3 +61,28 @@
   float: none;
   margin-right: 0;
 }
+
+.panel {
+  border: none;
+  background-color: darken($color-light, 7%);
+
+  &:not(:last-of-type) {
+    margin-bottom: $gap * 2;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &-body {
+    border: 1px solid $color-gray;
+  }
+
+  & > .panel-heading {
+    color: $color-light;
+    background-color: $color-accent;
+    border-color: $color-accent;
+    font-style: 1.2rem;
+    letter-spacing: 0.1em;
+  }
+}

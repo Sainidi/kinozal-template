@@ -40,6 +40,31 @@
   margin-right: 0;
 }
 
+.panel {
+  border: none;
+  background-color: #ededed;
+}
+
+.panel:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+
+.panel:last-of-type {
+  margin-bottom: 0;
+}
+
+.panel-body {
+  border: 1px solid #dddddd;
+}
+
+.panel > .panel-heading {
+  color: #ffffff;
+  background-color: #df8a13;
+  border-color: #df8a13;
+  font-style: 1.2rem;
+  letter-spacing: 0.1em;
+}
+
 html {
   font-size: 16px;
   overflow-y: scroll;
@@ -79,6 +104,15 @@ a:hover, a:focus {
   color: #ffffff;
   font-size: 1.15rem;
   letter-spacing: 0.2em;
+}
+
+.vertical-slider {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.vertical-slider__image {
+  width: 100%;
 }
 
 @media (min-width: 576px) {
