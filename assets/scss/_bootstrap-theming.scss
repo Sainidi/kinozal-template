@@ -82,7 +82,7 @@
     color: $color-light;
     background-color: $color-accent;
     border-color: $color-accent;
-    font-style: 1.2rem;
+    font-size: 1.2rem;
     letter-spacing: 0.1em;
     font-size: 1.2rem;
   }
@@ -91,4 +91,8 @@
 .input-lg,
 .input-group-lg > .form-control {
   font-size: 0.875rem;
+}
+
+.thumbnail {
+  transition: background-color 0.25s;
 }
