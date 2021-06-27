@@ -10,3 +10,27 @@
     width: 100%;
   }
 }
+
+.user-login {
+  position: relative;
+
+  &__tabs {
+    position: absolute;
+    top: 0;
+    right: $gap;
+    border: none;
+    margin-right: -5px;
+
+    a {
+      border: none !important;
+      background-color: transparent !important;
+      color: $color-gray;
+
+      padding: 14px 5px 12px !important;
+    }
+
+    .active a {
+      color: $color-light !important;
+    }
+  }
+}

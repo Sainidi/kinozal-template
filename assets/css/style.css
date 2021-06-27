@@ -63,6 +63,12 @@
   border-color: #df8a13;
   font-style: 1.2rem;
   letter-spacing: 0.1em;
+  font-size: 1.2rem;
+}
+
+.input-lg,
+.input-group-lg > .form-control {
+  font-size: 0.875rem;
 }
 
 html {
@@ -113,6 +119,29 @@ a:hover, a:focus {
 
 .vertical-slider__image {
   width: 100%;
+}
+
+.user-login {
+  position: relative;
+}
+
+.user-login__tabs {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  border: none;
+  margin-right: -5px;
+}
+
+.user-login__tabs a {
+  border: none !important;
+  background-color: transparent !important;
+  color: #dddddd;
+  padding: 14px 5px 12px !important;
+}
+
+.user-login__tabs .active a {
+  color: #ffffff !important;
 }
 
 @media (min-width: 576px) {
