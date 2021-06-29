@@ -35,7 +35,7 @@ h1::after, h2::after {
 }
 
 .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
-  background-color: #5182AE;
+  background-color: #5182ae;
 }
 
 .navbar-header {
@@ -50,14 +50,7 @@ h1::after, h2::after {
 .panel {
   border: none;
   background-color: #ededed;
-}
-
-.panel:not(:last-of-type) {
   margin-bottom: 30px;
-}
-
-.panel:last-of-type {
-  margin-bottom: 0;
 }
 
 .panel-body {
@@ -67,7 +60,7 @@ h1::after, h2::after {
 .panel > .panel-heading {
   color: #ffffff;
   background-color: #df8a13;
-  border-color: #df8a13;
+  border: none;
   font-size: 1.2rem;
   letter-spacing: 0.1em;
   font-size: 1.2rem;
@@ -82,6 +75,21 @@ h1::after, h2::after {
   -webkit-transition: background-color 0.25s;
   -o-transition: background-color 0.25s;
   transition: background-color 0.25s;
+}
+
+.embed-responsive {
+  border: 1px solid #dddddd;
+  border-radius: 4px 4px 0 0;
+  border-bottom: none;
+}
+
+.well {
+  background-color: #f1f1f1;
+  border-color: #dddddd;
+}
+
+.btn-lg {
+  float: right;
 }
 
 html {
@@ -187,6 +195,18 @@ section {
   width: 100%;
 }
 
+.new-films-item:hover .thumbnail, .new-films-item:focus .thumbnail,
+.top-week-item:hover .thumbnail,
+.top-week-item:focus .thumbnail {
+  background-color: #df8a13;
+}
+
+.new-films-item:hover h3, .new-films-item:focus h3,
+.top-week-item:hover h3,
+.top-week-item:focus h3 {
+  color: #ffffff;
+}
+
 .movie-news-item__thumbnail {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -228,6 +248,24 @@ section {
 .movie-news-item:hover .btn-warning {
   background-color: #df8a13;
   color: #ffffff;
+}
+
+.film-info {
+  font-size: 1.2rem;
+}
+
+.film-info__well {
+  text-align: center;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.film-info__wrapper:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+.film-info__badge {
+  font-size: 0.96rem;
 }
 
 .vertical-slider {
@@ -400,7 +438,7 @@ section {
 
 @media (min-width: 576px) {
   h1 {
-    margin: 50.5px 0 45px;
+    margin: 22.5px 0 45px;
   }
   .header-logo__title {
     font-size: 3.5rem;
@@ -420,7 +458,7 @@ section {
     margin: 5px 0 5px 5px;
   }
   h1 {
-    margin: 52.5px 0 45px;
+    margin: 22.5px 0 45px;
   }
 }
 

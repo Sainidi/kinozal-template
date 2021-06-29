@@ -65,14 +65,7 @@
 .panel {
   border: none;
   background-color: darken($color-light, 7%);
-
-  &:not(:last-of-type) {
-    margin-bottom: $gap * 2;
-  }
-
-  &:last-of-type {
-    margin-bottom: 0;
-  }
+  margin-bottom: $gap * 2;
 
   &-body {
     border: 1px solid $color-gray;
@@ -81,7 +74,7 @@
   & > .panel-heading {
     color: $color-light;
     background-color: $color-accent;
-    border-color: $color-accent;
+    border: none;
     font-size: 1.2rem;
     letter-spacing: 0.1em;
     font-size: 1.2rem;
@@ -95,4 +88,19 @@
 
 .thumbnail {
   transition: background-color 0.25s;
+}
+
+.embed-responsive {
+  border: 1px solid #dddddd;
+  border-radius: 4px 4px 0 0;
+  border-bottom: none;
+}
+
+.well {
+  background-color: #f1f1f1;
+  border-color: #dddddd;
+}
+
+.btn-lg {
+  float: right;
 }

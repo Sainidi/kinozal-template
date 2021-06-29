@@ -26,11 +26,11 @@ h1 {
   }
 
   @include sm-min {
-    margin: 52.5px 0 45px;
+    margin: 22.5px 0 45px;
   }
 
   @include xs-min {
-    margin: 50.5px 0 45px;
+    margin: 22.5px 0 45px;
   }
 
   &::after {
@@ -55,9 +55,6 @@ h2 {
   &::after {
     @extend %after-title;
   }
-}
-
-h3 {
 }
 
 section {
