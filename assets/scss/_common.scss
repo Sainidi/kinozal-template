@@ -17,10 +17,38 @@ a {
   }
 }
 
-h1 {}
+h1 {
+  font-family: $font-header;
+  font-size: 3rem;
+  margin: -7.5px 0 45px;
 
-h2 {}
+  &::after {
+    @extend %after-title;
+  }
+}
+
+h2 {
+  font-family: $font-header;
+  font-size: 2.5rem;
+  margin: 1em 0 1em ($gap * 3);
+
+  &::before {
+    content: "";
+    position: absolute;      
+    width: $gap * 2;
+    border-bottom: 3px solid rgba($color-accent, 0.5);
+    margin: 0.25em 0 0 0;
+    left: 0;    
+  }
+
+  &::after {
+    @extend %after-title;
+  }
+}
 
 h3 {}
 
-section {}
+section {
+  position: relative;
+  overflow: hidden;
+}

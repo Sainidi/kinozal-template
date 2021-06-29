@@ -3,5 +3,13 @@
 }
 
 %margin-bottom-lg {
-margin-bottom: $gap * 5.333333333333333;
+  margin-bottom: $gap * 5.333333333333333;
+}
+
+%after-title {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-bottom: 3px solid rgba($color-accent, 0.5);
+  margin: 0.85em 0 0 $gap;
 }

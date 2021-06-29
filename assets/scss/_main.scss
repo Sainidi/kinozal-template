@@ -1,3 +1,71 @@
 .main {
   @extend %margin-bottom-lg;
 }
+
+.new-films,
+.top-films {
+  &-row {
+    margin-right: -$gap / 2;
+    margin-left: -$gap / 2;
+    margin-bottom: -$gap;
+  }
+  &-item {
+    padding-left: $gap / 2;
+    padding-right: $gap / 2;
+    margin-bottom: $gap;
+
+    &__thumbnail {
+      margin-bottom: 0;
+    }
+
+    &__title {
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.movie-news {
+  &-item {
+    &__thumbnail {
+      transition: 0.3s;
+    }
+
+    &__link {
+      transition: color 0.3s;
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &__text {
+      text-align: justify;
+    }
+
+    &__button {
+      float: right;
+      margin-bottom: $gap * 2;
+      transition: 0.3s;
+    }
+
+    &:hover {
+      a {
+        color: $color-accent;
+      }
+
+      .thumbnail {
+        background-color: $color-accent;
+        border-color: $color-accent;
+      }
+
+      .btn-warning {
+        background-color: $color-accent;
+        color: $color-light;
+      }
+    }
+  }
+}
