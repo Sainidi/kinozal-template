@@ -1,9 +1,13 @@
 .main {
   @extend %margin-bottom-lg;
+
+  .site-search {
+    margin-bottom: $gap * 3;
+  }
 }
 
 .new-films,
-.top-films {
+.top-week {
   &-row {
     margin-right: -$gap / 2;
     margin-left: -$gap / 2;
@@ -25,6 +29,10 @@
       margin-top: 0;
       margin-bottom: 0;
     }
+
+    &__image {
+      width: 100%;
+    }
   }
 }
 
@@ -32,6 +40,7 @@
   &-item {
     &__thumbnail {
       transition: 0.3s;
+      margin-bottom: 0;
     }
 
     &__link {

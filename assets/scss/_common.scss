@@ -20,7 +20,18 @@ a {
 h1 {
   font-family: $font-header;
   font-size: 3rem;
-  margin: -7.5px 0 45px;
+
+  @include md-min {
+    margin: -7.5px 0 45px;
+  }
+
+  @include sm-min {
+    margin: 52.5px 0 45px;
+  }
+
+  @include xs-min {
+    margin: 50.5px 0 45px;
+  }
 
   &::after {
     @extend %after-title;
@@ -30,15 +41,15 @@ h1 {
 h2 {
   font-family: $font-header;
   font-size: 2.5rem;
-  margin: 1em 0 1em ($gap * 3);
+  margin: ($gap * 4) 0 ($gap * 3) ($gap * 3);
 
   &::before {
     content: "";
-    position: absolute;      
+    position: absolute;
     width: $gap * 2;
     border-bottom: 3px solid rgba($color-accent, 0.5);
     margin: 0.25em 0 0 0;
-    left: 0;    
+    left: 0;
   }
 
   &::after {
@@ -46,7 +57,8 @@ h2 {
   }
 }
 
-h3 {}
+h3 {
+}
 
 section {
   position: relative;
