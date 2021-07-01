@@ -112,13 +112,10 @@ a:hover, a:focus {
 
 h1 {
   font-family: "PT Serif", serif;
-  font-size: 3rem;
 }
 
 h2 {
   font-family: "PT Serif", serif;
-  font-size: 2.5rem;
-  margin: 60px 0 45px 45px;
 }
 
 h2::before {
@@ -195,6 +192,12 @@ section {
   width: 100%;
 }
 
+.new-films-item__caption,
+.top-week-item__caption {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .new-films-item:hover .thumbnail, .new-films-item:focus .thumbnail,
 .top-week-item:hover .thumbnail,
 .top-week-item:focus .thumbnail {
@@ -258,6 +261,10 @@ section {
   text-align: center;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+.film-info__wrapper {
+  white-space: nowrap;
 }
 
 .film-info__wrapper:not(:last-of-type) {
@@ -438,7 +445,12 @@ section {
 
 @media (min-width: 576px) {
   h1 {
+    font-size: 3rem;
     margin: 22.5px 0 45px;
+  }
+  h2 {
+    margin: 60px 0 45px 45px;
+    font-size: 2.5rem;
   }
   .header-logo__title {
     font-size: 3.5rem;
@@ -481,6 +493,14 @@ section {
 }
 
 @media (max-width: 575.8px) {
+  h1 {
+    font-size: 2rem;
+    margin: 30px 0 32px;
+  }
+  h2 {
+    margin: 45px 0 30px 45px;
+    font-size: 1.75rem;
+  }
   .header-logo__title {
     letter-spacing: 0.2em;
     font-size: 2.5rem;
