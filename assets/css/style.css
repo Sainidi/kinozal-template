@@ -185,17 +185,15 @@ section {
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 
 .new-films-item__image,
 .top-week-item__image {
   width: 100%;
-}
-
-.new-films-item__caption,
-.top-week-item__caption {
-  overflow: hidden;
-  white-space: nowrap;
 }
 
 .new-films-item:hover .thumbnail, .new-films-item:focus .thumbnail,
